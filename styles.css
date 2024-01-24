@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding-top: 60px; 
+    display:flex;
+    justify-content: flex-end;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black; 
+    padding: 15px 0;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+nav a {
+    color: pink;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover, .dropdown-content a:hover {
+    background-color: white;
+    color: pink;
+}
+
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 190px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.hover-item {
+    background-color:slategray !important;
+    color: yellowgreen !important;
+}
+.nav-search {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.nav-search input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-search button {
+    padding: 6px 10px;
+    background-color: pink;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-search button:hover {
+    background-color: cadetblue;
+}
+
+.main-content{
+    margin-top:80px;
+    margin-right: 20px;
+    text-align: center;
+    border:2px solid black;
+    height:500px;
+    width:500px;
+    border-radius: 50px;
+    margin:100px;
+    background-color:black;
+    transform:rotate(10deg);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow :10px 10px 20px rgba(0,0,0,0.5);
+    outline:6px solid pink;
+    outline-offset: 2px;
+    
+}
+.main-content p{
+    font-weight: bold;
+    color:pink;
+    font-size:20px;
+    margin:0;
+    padding: 20px;
+    
+    background-color: white;
+    border-radius: 50px;
+    transform: rotate(20deg);
+    width:100px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 15px solid navy;
+   
+}
+.section{
+    font-size: 100px;
+    text-align: left;
+    width:50%;
+    padding-right: 20px;
+    
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
